@@ -278,6 +278,7 @@ class CardItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return isSelected
         ? Container(
+          margin: EdgeInsets.symmetric(vertical: 12),
           padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
           decoration: BoxDecoration(
             color: Color(0xFFF1F1F1),
@@ -314,7 +315,7 @@ class CardItem extends StatelessWidget {
           ),
         )
         : Container(
-          margin: EdgeInsets.symmetric(vertical: 8),
+          margin: EdgeInsets.symmetric(vertical: 4),
           padding: EdgeInsets.only(left: 8, top: 8, bottom: 8),
           decoration: BoxDecoration(
             color: Color(0xFFF9F9FA),
